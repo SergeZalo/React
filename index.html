@@ -7,7 +7,7 @@
     <title>React Js</title>
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">Amour</div>
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
@@ -15,18 +15,61 @@
 
     <script type="text/babel">
 
-          
+   function Helloworld () {
 
-        function Helloword() {
-            
-            return(
-                <div>
-                    Bonjour Serge
-                </div>
-            )
-        }
+    const name = "Mogogo" 
 
-        ReactDOM.render(<Helloword/>, document.getElementById("root"))
+   return(
+
+     <h1>
+        
+        Mon amour {name}
+        
+
+     </h1>
+     
+   )  
+
+   }    
+
+   function Header () {
+
+   return(
+
+    <h1>
+        
+        Navbar
+        
+
+     </h1>
+
+   )
+
+   }
+
+   function Description () {
+
+   return(
+
+   <p>
+    
+   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi itaque assumenda esse velit consectetur, totam quas minus exercitationem quod quaerat labore optio error adipisci soluta deserunt? Ex atque ad deleniti.
+    </p>
+
+   )
+
+   }
+   
+   ReactDOM.render( 
+   
+   <div>
+    <Header/>
+    <Description/>
+   </div>
+   
+   
+   , document.getElementById("root"))
+
 
     </script>
 
